@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/good_info/good_info",
+    "pages/index/index",
+    "pages/shopInfo/shopInfo",
+    "pages/good_list/good_list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#1AAD16",
+    "color":"#353535",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/images/home_icon.png",
+      "selectedIconPath":"pages/images/home_icon_current.png"
+    },{
+      "pagePath": "pages/shopInfo/shopInfo",
+      "text": "店铺信息",
+      "iconPath": "pages/images/shop_icon.png",
+      "selectedIconPath":"pages/images/shop_icon_current.png"
+    }
+  ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

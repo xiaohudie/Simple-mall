@@ -1,0 +1,67 @@
+.shop{
+  padding:5vw 5vw;
+}
+
+.page-section-spacing {
+  box-sizing:border-box;
+  width:100%;
+}  
+
+.page-section-spacing .swiper-section {
+  width:100%;
+  height:50vw;
+} 
+
+.page-section-spacing .swiper-section .slide-image {
+  width:100%;
+  height:100%;  
+}
+  
+.shop_name{
+  text-align: center;
+  display:block;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.title{
+  margin: 20px 0;
+  display:block;
+}
+
+.shop_info{
+  font-size: 15px;
+}
+
+.phone{
+  display: block;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.wechat{
+  display: inline-block;
+  font-size: 15px;
+}
+
+.address{
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.copyBtn{
+  display:inline-block;
+  width:25vw;
+  font-size:12px;
+  height:25px;
+  line-height:25px;
+  background-color:#FFF;
+  border-color:#1AAD19;
+  margin-left:5vw;
+  margin-bottom:-7px;
+  overflow:visible;
+}
+
+  

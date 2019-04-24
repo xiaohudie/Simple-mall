@@ -1,0 +1,166 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section-spacing{
+  box-sizing: border-box;
+  padding: 0 80rpx;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2:before{
+  content: 'B';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button{
+  margin-bottom: 30rpx;
+}
+button:last-child{
+  margin-bottom: 0;
+}
+.page-section-title{
+  padding: 0;
+}
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+
+.menu2{
+  text-align: center;
+  padding:0 10vw;
+}
+
+.menu2_view{
+  display: inline-block;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.menu2_view image{
+  width:20vw;
+  height:20vw;  
+  display:block;
+}
+
+.menu2_view text{
+  font-size:15px;
+  text-align: center;
+}
+
+.title{
+  display: block;
+  text-align:center;
+  margin-top:40px;
+  font-weight:700;
+  margin-bottom: 40px;
+  color:#0A960A;
+}
+
+.recommend_menu{
+  padding:0 10vw;
+  display: flex;
+  align-content: center;
+  align-items:center;
+  border-radius: 10px;
+  background-color: rgb(240, 249, 235);
+  margin:10px 0;
+  box-shadow:3px 3px 3px #F6F9F6;
+}
+
+.recommend_goods_img{
+  width: 30vw;
+  height:30vw;
+}
+
+.recommend_goods_info{
+  display: inline-block;
+  width:40vw;
+  height:30vw;
+  margin-left: 5vw;
+}
+
+.recommend_goods_info .goods_name{
+  width: 40vw;
+  font-size:12px;
+  line-height: 20px;
+  height: 40px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: block;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+
+.recommend_goods_info .goods_price{
+  color:#ff0068;
+  font-family: PingFang SC;
+}

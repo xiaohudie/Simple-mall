@@ -1,0 +1,8 @@
+.wx_shareFriends_btn{
+    width: 80vw;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #1AAD19;
+    border-color: #fff;
+}

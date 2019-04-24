@@ -1,0 +1,45 @@
+<!--logs.wxml-->
+<view>
+  <view class="page-section page-section-spacing swiper">
+    <!-- 头部 -->
+    <swiper
+      class="swiper-section"
+      indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="good_info">
+    <view><text class="money_icon">¥</text><text class="money_price">{{goodsPrice}}</text></view>
+    <text class="good_des">{{goodsName}}</text>
+    <view>
+      <text class="good_title">产品参数</text>
+      <view class="good_type" wx:for="{{typeArry}}" wx:key="item.id">
+        <text class="good_type_title">{{item.title}}</text>
+        <text class="type_info" wx:for="{{item.typeInfo}}" wx:key="item.id">{{item}}</text>
+      </view>
+    </view>
+    <view>
+        <text class="good_title">产品描述</text>
+        <text class="good_text">{{good_text}}</text>
+    </view>
+    <view>
+        <text class="good_title">产品展示</text>
+        <view class="good_img" wx:for="{{goodImgArry}}" wx:key="*this">
+          <image src="{{item}}" class="good_image" mode="widthFix"/>
+        </view>
+    </view>
+  </view>
+<view class="toMore">
+    <view bindtap="showShare" class="baseIcon {{showMore ? 'isOpen':''}}">
+        <image class="img" src='../images/more.png' />
+    </view>
+    <view class="moreIcon icon1" wx:if="{{showMore}}"><image class="img" src='../images/cart.png' /></view>
+    <view class="moreIcon icon2" wx:if="{{showMore}}"><image class="img" src='../images/toBuy.png' /></view>
+    <view class="moreIcon icon3" wx:if="{{showMore}}"><image class="img" src='../images/share.png' /></view>
+</view>
+</view>

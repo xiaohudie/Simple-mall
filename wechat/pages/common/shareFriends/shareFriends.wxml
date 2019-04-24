@@ -1,0 +1,10 @@
+<!--pages/common/pop/pop.wxml-->
+<template name="A">
+    <view class='wx_shareFriends'>  
+        <view hidden="{{!isShow}}">
+            <image src="/pages/images/close.png" bindtap="hideDialog" alt="关闭"/>
+            <image src="{{shareFriend}}" alt="分享至朋友圈"/>
+            <button>保存图片分享至朋友圈</button>
+        </view>
+    </view>
+</template>

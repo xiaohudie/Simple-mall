@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="good_list_section">
+    <navigator class="recommend_menu" wx:for="{{recommendArry}}" wx:key="item.id" url="/pages/good_info/good_info?id={{item.id}}">
+      <image src="{{item.src}}" mode="widthFix" class="recommend_goods_img"></image>
+      <view class="recommend_goods_info">
+        <text class="goods_name">{{item.name}}</text>
+        <text class="goods_price">¥{{item.price}}</text>
+      </view>
+    </navigator>
+</view>

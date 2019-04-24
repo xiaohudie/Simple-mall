@@ -1,0 +1,36 @@
+<!--logs.wxml-->
+<view class="shop">
+  <text class="shop_name">{{shopName}}</text>
+  <view>
+    <text class="title">店铺介绍</text>
+    <text class="shop_info">{{shopInfo}}</text>
+  </view>
+  <view>
+    <text class="title">店铺展示</text>
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+      class="swiper-section"
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{shopImg}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view>
+    <text class="title">咨询店铺</text>
+    <text class="phone" selectable='true' bindtap="phoneCall">电话：{{contactPhone}}</text>
+    <text class="wechat" selectable='true' >微信：{{contactWechat}}</text><button class="copyBtn" bindtap="copyBtn">一键复制</button>
+  </view>
+  <view>
+    <text class="title">店铺地址</text>
+    <text class="address" bindtap="openWeChatMap">{{address}}</text>
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" markers="{{markers}}" bindmarkertap="openWeChatMap" show-location enable-rotate style="width: 100%; height: 350px;">
+    </map>
+  </view>
+  <import src="/pages/common/shareFriends/shareFriends.wxml"/>
+  <template is="A"/>
+</view>
